@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a JavaScript program to convert temperatures to and from celsius, fahrenheit.</h1>
+    <script>
+        // var temp= prompt("Enter the temperature");
+     function cToF(celsius)
+{
+    var cTemp = celsius;
+    var cToFahr = cTemp * 9 / 5 + 32;
+    var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+    alert(message);
+}
+function fToC(fahrenheit) 
+{
+  const fTemp = fahrenheit;
+  const fToCel = (fTemp - 32) * 5 / 9;
+  const message = `${fTemp}\xB0F is ${fToCel}\xB0C.`;
+    alert(message);
+} 
+var a= parseInt( prompt("Enter the temperature in celcius"),10);
+var b= parseInt( prompt("Enter the temperature in fahrenheit"),10);
+cToF(a);
+fToC(b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Calculate the Area Of traingle</h1>
+    <script>
+        alert("Calculate the Area Of traingle:");
+        let a,b,c;
+         a= parseInt(prompt ("Enter Side 1") ,10);
+         b= parseInt(prompt ("Enter Side 2") ,10);
+         c= parseInt(prompt ("Enter Side 3" ),10) ;
+         
+        var s=(a+b+c)/2
+        // console.log(s)
+       var area= Math.sqrt(s*((s-a)*(s-b)*(s-c)));
+    //    console.log(area);
+        alert(area)
+
+    </script>
+</body>
+</html>

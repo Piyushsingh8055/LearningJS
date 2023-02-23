@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="border: 5px">
+        <label for=""> Enter First Number</label>
+        <input type="number" id="a" > <br> <br>
+        <label for=""> Enter Second Number</label>
+        <input type="number" id="b"> 
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+
+    </form>
+    <p>The Result is : <br>
+        <span id = "result"></span>
+        <span id = "divide result"></span>
+    </p>
+    
+    <script >
+        function multiplyBy(){
+        num1= document.getElementById("a").value;
+        num2= document.getElementById("b").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+    }
+
+    function divideBy(){
+        num1= document.getElementById("a").value;
+        num2= document.getElementById("b").value;
+        document.getElementById("divide result").innerHTML = num1 /num2;
+    }
+    </script>
+</body>
+</html>
+
+
+

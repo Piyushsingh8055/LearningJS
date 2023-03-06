@@ -4,9 +4,9 @@ function diff(num ){
     }
     else{
         return(19-num);
-    }
+    } 
 }
 console.log(diff(12))
 console.log(diff(19))
-console.log(diff(22))
+console.log(diff(22))   
 
